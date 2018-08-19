@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# Change 'Django administration' text
+admin.site.site_header = "CookBook Admin"
+admin.site.index_title = "CookBook Admin DashBoard"
+admin.site.site_title = "welcome"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
